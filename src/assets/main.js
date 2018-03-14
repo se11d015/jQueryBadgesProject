@@ -21,7 +21,7 @@ $(function() {
         }).appendTo($badges);
 
         $('<h3 />', {
-          'class': 'title'
+          text: course.title
         }).appendTo($course);
 
         $('<img />', {
@@ -30,7 +30,8 @@ $(function() {
 
         $('<a />', {
           'class': 'btn btn-primary',
-          target: course.url,
+          target: '_blank',
+          href: course.url,
           text: 'See Course'
         }).appendTo($course);
 
